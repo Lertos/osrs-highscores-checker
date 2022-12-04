@@ -22,15 +22,14 @@ public class Main {
             if (response.equalsIgnoreCase("quit"))
                 continue;
 
-            System.out.println("ddd");
-
             //Get the information from the API based on the player name given
             List<String> information = Main.getHighscores(response);
 
             if (information == null)
                 continue;
 
-            System.out.println(information);
+            Player player = new Player(information);
+
 
         }
     }
@@ -52,7 +51,6 @@ public class Main {
 
             int responseCode = connection.getResponseCode();
 
-            System.out.println(responseCode);
             //Check if the connection was successful
             if(responseCode != 200) {
                 if(responseCode == 404) {
