@@ -33,7 +33,8 @@ public class PlayerStats {
             for (int i=0; i<descriptors.size(); i++)
                 sb.append(descriptors.get(i) + columns[i+1] + " ");
 
-            System.out.println(sb.toString() + "\n");
+            System.out.println(sb.toString());
         }
+        System.out.println();
     }
 }
