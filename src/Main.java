@@ -29,6 +29,9 @@ public class Main {
                 continue;
 
             Player player = new Player(information, response);
+            Menu menu = new Menu(player);
+
+            menu.mainMenu();
         }
     }
 

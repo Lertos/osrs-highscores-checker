@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9ed1cb7-b6ca-4f82-82e4-750eded4f4e6" name="Changes" comment="Making numbers formatted with commas; add new lines and tabs">
+    <list default="true" id="b9ed1cb7-b6ca-4f82-82e4-750eded4f4e6" name="Changes" comment="Adding a menu class to take care of all the input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +135,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670255524669</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Adding the players name in the Player class">
+      <created>1670274330276</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670274330276</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Adding a menu class to take care of all the input">
+      <created>1670274347211</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670274347211</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +175,8 @@
     <MESSAGE value="Adding descriptors and full row output" />
     <MESSAGE value="Minor tweaks" />
     <MESSAGE value="Making numbers formatted with commas; add new lines and tabs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making numbers formatted with commas; add new lines and tabs" />
+    <MESSAGE value="Adding the players name in the Player class" />
+    <MESSAGE value="Adding a menu class to take care of all the input" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding a menu class to take care of all the input" />
   </component>
 </project>

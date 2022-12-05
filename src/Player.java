@@ -73,16 +73,34 @@ public class Player {
         playerClues = new PlayerClues(playerCluesList, 2);
         playerBosses = new PlayerBosses(playerBossesList, 2);
 
-        playerSkills.showRowFull();
-        playerActivities.showRowFull();
-        playerClues.showRowFull();
-        playerBosses.showRowFull();
-
         return true;
     }
 
     public String getPlayerName() {
         return this.playerName;
+    }
+
+    public void showCombinedStats() {
+        playerSkills.showRowFull();
+        playerActivities.showRowFull();
+        playerClues.showRowFull();
+        playerBosses.showRowFull();
+    }
+
+    public void showPlayerSkills() {
+        playerSkills.showRowFull();
+    }
+
+    public void showPlayerActivities() {
+        playerActivities.showRowFull();
+    }
+
+    public void showPlayerClues() {
+        playerClues.showRowFull();
+    }
+
+    public void showPlayerBosses() {
+        playerBosses.showRowFull();
     }
 
 }
