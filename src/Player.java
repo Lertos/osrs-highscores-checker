@@ -7,7 +7,6 @@ import java.util.List;
 public class Player {
 
     private List<String> highscoreMappings;
-
     private PlayerSkills playerSkills;
     private PlayerActivities playerActivities;
     private PlayerClues playerClues;
@@ -72,11 +71,11 @@ public class Player {
         playerClues = new PlayerClues(playerCluesList, 2);
         playerBosses = new PlayerBosses(playerBossesList, 2);
 
-
         playerSkills.showRowFull();
         playerActivities.showRowFull();
         playerClues.showRowFull();
         playerBosses.showRowFull();
+
         return true;
     }
 

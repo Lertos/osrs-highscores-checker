@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9ed1cb7-b6ca-4f82-82e4-750eded4f4e6" name="Changes" comment="Creating the player stats of each type">
+    <list default="true" id="b9ed1cb7-b6ca-4f82-82e4-750eded4f4e6" name="Changes" comment="Adding descriptors and full row output">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerActivities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerActivities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerBosses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerBosses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerClues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerClues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerSkills.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerSkills.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlayerStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerStats.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670203207865</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adding descriptors and full row output">
+      <created>1670204217574</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670204217574</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +136,7 @@
     <MESSAGE value="Changing text file location" />
     <MESSAGE value="Adding starting functionality for each stat type" />
     <MESSAGE value="Creating the player stats of each type" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating the player stats of each type" />
+    <MESSAGE value="Adding descriptors and full row output" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding descriptors and full row output" />
   </component>
 </project>

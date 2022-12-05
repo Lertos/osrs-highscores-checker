@@ -27,12 +27,13 @@ public class PlayerStats {
                 return;
             }
 
-            sb.append(columns[0]);
+            //The replace is because some headers have the word "rank" in them, but we already specify it
+            sb.append(columns[0].replace(" - Rank", "") + " = ");
 
-            for (int i=0; i<descriptors.size(); i++) {
-                sb.append(": " + descriptors.get(i) + columns[i+1]);
-            }
-            System.out.println(sb.toString());
+            for (int i=0; i<descriptors.size(); i++)
+                sb.append(descriptors.get(i) + columns[i+1] + " ");
+
+            System.out.println(sb.toString() + "\n");
         }
     }
 }
