@@ -23,7 +23,7 @@ public class Player {
     }
 
     private boolean setupHighscoreMappings() {
-        try (BufferedReader file = new BufferedReader(new FileReader("HighscoreMappings.txt"))) {
+        try (BufferedReader file = new BufferedReader(new FileReader("resources/HighscoreMappings.txt"))) {
             String input;
 
             while ((input = file.readLine()) != null) {
