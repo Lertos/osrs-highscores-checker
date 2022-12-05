@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9ed1cb7-b6ca-4f82-82e4-750eded4f4e6" name="Changes" comment="Adding the mappings for the API">
+    <list default="true" id="b9ed1cb7-b6ca-4f82-82e4-750eded4f4e6" name="Changes" comment="Reading file and adding lines to respective lists">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HighscoreMappings" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayerActivities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerActivities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayerBosses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerBosses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayerClues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerClues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayerSkills.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerSkills.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayerStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerStats.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +42,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dylan\IdeaProjects\osrs-highscores-checker\resources" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670099303858</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Reading file and adding lines to respective lists">
+      <created>1670114257497</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670114257497</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,6 +110,7 @@
     <MESSAGE value="Setting up the base structure of how this will work" />
     <MESSAGE value="Getting the basics of the grab from the API setup" />
     <MESSAGE value="Adding the mappings for the API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding the mappings for the API" />
+    <MESSAGE value="Reading file and adding lines to respective lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reading file and adding lines to respective lists" />
   </component>
 </project>

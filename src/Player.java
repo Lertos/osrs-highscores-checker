@@ -49,22 +49,29 @@ public class Player {
         List<String> playerBossesList = new ArrayList<>();
 
         //Get each type in their respective lists
-        for (String line : information) {
-            String category = line.substring(0, 2);
-            String stringToAdd = line.substring(1);
+        for (int i=0; i<information.size(); i++) {
+            String category = highscoreMappings.get(i).substring(0, 2);
+            String mappingData = highscoreMappings.get(i).substring(2);
+            String highscoreData = information.get(i);
+            String combinedData = mappingData + "," + highscoreData;
 
             //Check the category given by the substring of the first two characters of each line
             if (category.equalsIgnoreCase("s,"))
-                playerSkillsList.add(stringToAdd);
+                playerSkillsList.add(combinedData);
             else if (category.equalsIgnoreCase("a,"))
-                playerActivitiesList.add(stringToAdd);
+                playerActivitiesList.add(combinedData);
             else if (category.equalsIgnoreCase("c,"))
-                playerCluesList.add(stringToAdd);
+                playerCluesList.add(combinedData);
             else if (category.equalsIgnoreCase("b,"))
-                playerBossesList.add(stringToAdd);
+                playerBossesList.add(combinedData);
         }
 
         //Setup each Player object
+        playerSkills = new PlayerSkills(playerSkillsList, 3);
+        playerActivities = new PlayerActivities(playerActivitiesList, 2);
+        playerClues = new PlayerClues(playerCluesList, 2);
+        playerBosses = new PlayerBosses(playerBossesList, 2);
+
         return true;
     }
 

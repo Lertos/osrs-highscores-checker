@@ -29,8 +29,6 @@ public class Main {
                 continue;
 
             Player player = new Player(information);
-
-
         }
     }
 
