@@ -5,8 +5,8 @@ public class PlayerClues extends PlayerStats {
 
     private final List<String> descriptors;
 
-    public PlayerClues (List<String> information, int dataColumns) {
-        super(information, dataColumns);
+    public PlayerClues (List<String> information) {
+        super(information);
 
         descriptors = new ArrayList<>();
 

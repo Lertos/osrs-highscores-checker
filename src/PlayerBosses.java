@@ -5,8 +5,8 @@ public class PlayerBosses extends PlayerStats {
 
     private final List<String> descriptors;
 
-     public PlayerBosses (List<String> information, int dataColumns) {
-         super(information, dataColumns);
+     public PlayerBosses (List<String> information) {
+         super(information);
 
          descriptors = new ArrayList<>();
 

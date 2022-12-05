@@ -3,18 +3,9 @@ import java.util.List;
 public class PlayerStats {
 
     private final List<String> information;
-    private final int dataColumns;
 
-    public PlayerStats(List<String> information, int dataColumns) {
+    public PlayerStats(List<String> information) {
         this.information = information;
-        this.dataColumns = dataColumns;
-    }
-
-    public void showRowDescriptor() {
-        for (String row : information) {
-            String[] columns = row.split(",");
-            System.out.println(columns[0]);
-        }
     }
 
     public void showRowFull(List<String> descriptors) {
@@ -28,7 +19,8 @@ public class PlayerStats {
             }
 
             //The replace is because some headers have the word "rank" in them, but we already specify it
-            sb.append(columns[0].replace(" - Rank", "") + "\n\t");
+            sb.append(columns[0].replace(" - Rank", ""));
+            sb.append("\n\t");
 
             if (isUnranked(columns))
                 sb.append("Unranked");
@@ -36,13 +28,18 @@ public class PlayerStats {
                 int descSize = descriptors.size();
 
                 for (int i = 0; i < descSize; i++) {
-                    if (i == descSize-1)
-                        sb.append(descriptors.get(i) + String.format("%,d", Integer.parseInt(columns[i + 1])));
-                    else
-                        sb.append(descriptors.get(i) + String.format("%,d", Integer.parseInt(columns[i + 1])) + ", ");
+                    if (i == descSize-1) {
+                        sb.append(descriptors.get(i));
+                        sb.append(String.format("%,d", Integer.parseInt(columns[i + 1])));
+                    }
+                    else {
+                        sb.append(descriptors.get(i));
+                        sb.append(String.format("%,d", Integer.parseInt(columns[i + 1])));
+                        sb.append(", ");
+                    }
                 }
             }
-            System.out.println(sb.toString());
+            System.out.println(sb);
         }
         System.out.println();
     }

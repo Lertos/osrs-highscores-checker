@@ -7,7 +7,7 @@ import java.util.List;
 public class Player {
 
     private final String playerName;
-    private List<String> highscoreMappings;
+    private final List<String> highscoreMappings;
     private PlayerSkills playerSkills;
     private PlayerActivities playerActivities;
     private PlayerClues playerClues;
@@ -17,7 +17,7 @@ public class Player {
         this.playerName = playerName;
         this.highscoreMappings = new ArrayList<>();
 
-        if (setupHighscoreMappings() == false)
+        if (!setupHighscoreMappings())
             return;
 
         createPlayerLists(information);
@@ -37,11 +37,11 @@ public class Player {
         return true;
     }
 
-    private boolean createPlayerLists(List<String> information) {
+    private void createPlayerLists(List<String> information) {
         //Checks to make sure the mappings and the API are sending the same amount; otherwise there could be incorrect data showing
         if (information.size() != highscoreMappings.size()) {
             System.out.println("ERROR: The mappings and the API are different sizes");
-            return false;
+            return;
         }
 
         List<String> playerSkillsList = new ArrayList<>();
@@ -68,12 +68,10 @@ public class Player {
         }
 
         //Setup each Player object
-        playerSkills = new PlayerSkills(playerSkillsList, 3);
-        playerActivities = new PlayerActivities(playerActivitiesList, 2);
-        playerClues = new PlayerClues(playerCluesList, 2);
-        playerBosses = new PlayerBosses(playerBossesList, 2);
-
-        return true;
+        playerSkills = new PlayerSkills(playerSkillsList);
+        playerActivities = new PlayerActivities(playerActivitiesList);
+        playerClues = new PlayerClues(playerCluesList);
+        playerBosses = new PlayerBosses(playerBossesList);
     }
 
     public String getPlayerName() {

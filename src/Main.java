@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -38,9 +37,6 @@ public class Main {
     public static List<String> getHighscores(String playerName) {
         List<String> lines = new ArrayList<>();
 
-        //Making sure to change spaces to the unicode equivalent
-        playerName.replace(" ", "%20");
-
         //Make the request to the OSRS API
         try {
             URL url = new URL("https://secure.runescape.com/m=hiscore_oldschool/index_lite.ws?player=" + playerName);
@@ -65,7 +61,7 @@ public class Main {
             connection.connect();
 
             BufferedReader inputReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            String line = "";
+            String line;
 
             while((line = inputReader.readLine()) != null) {
                 lines.add(line);
