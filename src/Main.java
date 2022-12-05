@@ -28,7 +28,7 @@ public class Main {
             if (information == null)
                 continue;
 
-            Player player = new Player(information);
+            Player player = new Player(information, response);
         }
     }
 

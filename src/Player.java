@@ -6,14 +6,16 @@ import java.util.List;
 
 public class Player {
 
+    private final String playerName;
     private List<String> highscoreMappings;
     private PlayerSkills playerSkills;
     private PlayerActivities playerActivities;
     private PlayerClues playerClues;
     private PlayerBosses playerBosses;
 
-    public Player(List<String> information) {
-        highscoreMappings = new ArrayList<>();
+    public Player(List<String> information, String playerName) {
+        this.playerName = playerName;
+        this.highscoreMappings = new ArrayList<>();
 
         if (setupHighscoreMappings() == false)
             return;
@@ -77,6 +79,10 @@ public class Player {
         playerBosses.showRowFull();
 
         return true;
+    }
+
+    public String getPlayerName() {
+        return this.playerName;
     }
 
 }
