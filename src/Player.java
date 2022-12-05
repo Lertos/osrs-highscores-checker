@@ -72,6 +72,11 @@ public class Player {
         playerClues = new PlayerClues(playerCluesList, 2);
         playerBosses = new PlayerBosses(playerBossesList, 2);
 
+
+        playerSkills.showRowFull();
+        playerActivities.showRowFull();
+        playerClues.showRowFull();
+        playerBosses.showRowFull();
         return true;
     }
 
